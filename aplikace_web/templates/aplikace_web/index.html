@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href={% static 'aplikace_web/style.css'%}>
+</head>
+<body>
+    <nav id="navbar">
+    
+        <ul>
+            <li><a href="#showcase2">Projekty</a></li>
+            <li><a href="index.html">Hlavní stránka</a></li>
+        </ul>
+    </nav>
+
+<div id="showcase">
+    <div class="showcase-content">
+        <h1 class="l-heading">"Programátor" Adam Vykydal</h1>
+    </div>
+</div>
+<div id="showcase2">
+    <div id = "hprojekt"><h1 >Moje projekty <hr id = "hprojektline"></h1></div>
+    <div class="items">
+        <div class="item">
+            <h2 class = "projekth">Projekt navbar</h2>
+            <a href="https://adamvykydal.github.io/PVA1/"><img src={% static 'aplikace_web/img/projekt1.PNG' %} alt="projekt1" width="500" height="250"></a>
+            
+        </div>
+        <div class="item">
+            <h2 class = "projekth">Projekt google</h2>
+            <a href="https://adamvykydal.github.io/PVA2/"><img src={% static 'aplikace_web/img/gugl.PNG' %}  alt="gugl" width="500" height="250"></a>
+        </div>
+        <div class="item">
+            <h2 class = "projekth">Projekt portfolio</h2>
+            <a href={% url 'index' %}><img src={% static 'aplikace_web/img/jahtml.PNG' %}  alt="projekt1" width="500" height="250"></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Vykdal 2023</p>
+</footer>
+
+</body>
+</html>
